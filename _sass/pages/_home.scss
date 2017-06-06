@@ -1,0 +1,35 @@
+article {
+  .opening-p {
+    font-size: 20px;
+    border-bottom: 2px solid #f6d335;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    position: relative;
+
+    @include breakpoint(s) {
+      &::after {
+        content: ' ';
+      	left: 100%;
+      	bottom: -9px;
+      	border: solid transparent;
+      	height: 0;
+      	width: 0;
+      	position: absolute;
+      	pointer-events: none;
+        border-color: rgba(136, 183, 213, 0);
+        border-left-color: $yellow;
+        border-width: 8px;
+      }
+    }
+  }
+}
+
+aside {
+  background: #fff;
+  color: #333;
+
+  @include breakpoint(s) {
+    padding-left: 15px;
+    padding-top: 0;
+  }
+}

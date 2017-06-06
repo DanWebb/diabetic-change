@@ -1,0 +1,48 @@
+@import './lib.min';
+
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,400,500');
+
+@import './partials/variables';
+@import './partials/mixins';
+
+body {
+  font-family: $font;
+  font-weight: $font-light;
+  letter-spacing: 1px;
+  color: #333;
+  font-size: 14px;
+}
+
+.container {
+  padding: 60px 0;
+  width: 90%;
+
+  @include breakpoint(s) {
+    width: 85%;
+  }
+}
+
+a,
+a:hover,
+a:active,
+a:focus {
+  color: $yellow;
+  text-decoration: none;
+  font-weight: $font-medium;
+  cursor: pointer;
+}
+
+.white { color: #fff !important; }
+.yellow { color: $yellow !important; }
+.u-align-right { text-align: right; }
+.u-align-left { text-align: left; }
+
+@import './partials/header';
+@import './partials/button';
+@import './partials/toggle';
+@import './partials/form';
+@import './partials/highlightable';
+@import './partials/footer';
+@import './partials/social-links';
+
+@import './pages/home';

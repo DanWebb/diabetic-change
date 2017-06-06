@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+
+<div class="row">
+    <article class="seven columns">
+
+        <p class="opening-p">
+            {{ page.opening_text | replace: 'subscribe', '<a href="#" class="subscribe-now">subscribe</a>' | replace: 'subscribing', '<a href="#" class="subscribe-now">subscribing</a>' }}
+        </p>
+
+        {{ content }}
+    </article>
+
+    <aside class="five columns">
+        <form action="//diabetic-change.us15.list-manage.com/subscribe/post?u=7df482975c843f037316def2b&amp;id=5f32f392a1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="subscribe-form validate" target="_blank" novalidate>
+
+        	<label for="mce-EMAIL">Email Address</label>
+        	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+
+        	<label for="mce-FNAME">First Name</label>
+        	<input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+
+        	<label for="mce-LNAME">Last Name </label>
+        	<input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+
+            <label>Diabetes Type <small>(our content is currently Type 1 only)</small></label>
+            <div class="toggle">
+                <input type="radio" value="Type 1" name="TYPE" id="mce-TYPE-0" checked="checked"><label for="mce-TYPE-0">Type 1</label>
+                <input type="radio" value="Type 2" name="TYPE" id="mce-TYPE-1"><label for="mce-TYPE-1">Type 2</label>
+            </div>
+
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_7df482975c843f037316def2b_5f32f392a1" tabindex="-1" value=""></div>
+
+            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+        </form>
+    </aside>
+</div>

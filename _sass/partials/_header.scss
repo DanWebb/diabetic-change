@@ -1,0 +1,29 @@
+header {
+  background: $yellow;
+  color: #fff;
+
+  .container {
+    padding-top: 0;
+  }
+
+  .top-bar {
+    @import './logo';
+    @import './nav';
+
+    margin-bottom: 40px;
+  }
+
+  h1 {
+    font-size: 30px;
+    font-weight: $font-bold;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  @include breakpoint(s) {
+    h1 {
+      font-size: 35px;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+form {
+  margin-bottom: 0;
+
+  label {
+    font-size: 12px;
+    font-weight: $font-medium;
+  }
+
+  input[type="text"],
+  input[type="text"]:focus,
+  input[type="email"],
+  input[type="email"]:focus {
+    background: rgba(253, 216, 53, .1);
+    border: 0;
+    border-bottom: 2px solid rgba(253, 216, 53, .3);
+    width: 100%;
+    border-radius: 0;
+    font-size: 18px;
+    font-weight: $font-light;
+    padding: 25px 15px;
+    border-radius: 2px;
+
+    &:focus,
+    &:hover {
+      border-bottom: 2px solid $yellow;
+    }
+  }
+}

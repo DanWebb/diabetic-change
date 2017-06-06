@@ -1,0 +1,18 @@
+footer {
+  background: #333;
+  color: #fff;
+
+  .container {
+    padding: 20px 0 15px 0;
+  }
+
+  .u-align-right {
+    text-align: left;
+  }
+
+  @include breakpoint(s) {
+    .u-align-right {
+      text-align: right;
+    }
+  }
+}

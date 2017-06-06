@@ -1,0 +1,20 @@
+nav {
+  display: none;
+  text-align: right;
+  padding-top: 14px;
+  box-sizing: border-box;
+
+  li {
+    list-style-type: none;
+
+    a {
+      color: #fff;
+      font-weight: $font-light;
+      text-decoration: none;
+    }
+  }
+
+  @include breakpoint(s) {
+    display: block;
+  }
+}

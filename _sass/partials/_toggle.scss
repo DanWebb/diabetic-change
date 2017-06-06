@@ -1,0 +1,42 @@
+.toggle {
+  border: 2px solid $yellow;
+  width: 100%;
+  border-radius: 2px;
+  box-sizing: border-box;
+
+  input[type="radio"] {
+    display: none;
+
+    + label {
+      background: rgba(253, 216, 53, 0.1);
+      display: inline-block;
+      color: rgba(80, 80, 80, 0.2);
+      font-size: 18px;
+      font-weight: $font-light;
+      text-align: center;
+      width: 50%;
+      height: 48px;
+      line-height: 48px;
+      margin: 0;
+      box-sizing: border-box;
+      cursor: pointer;
+      float: left;
+    }
+
+    + label:hover {
+      background: rgba(253, 216, 53, 0.2);
+    }
+
+    &:checked + label,
+    &:checked + label:hover {
+      background: $yellow;
+      color: #fff;
+    }
+  }
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

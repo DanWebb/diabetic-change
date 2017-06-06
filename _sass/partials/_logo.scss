@@ -1,0 +1,22 @@
+.logo {
+  font-weight: $font-light;
+
+  a,
+  a:hover,
+  a:active,
+  a:focus {
+    color: #fff;
+  }
+
+  img {
+    display: inline-block;
+    width: 25px;
+    position: relative;
+    top: 9px;
+    margin-right: 10px;
+  }
+
+  span {
+    font-weight: $font-bold;
+  }
+}
